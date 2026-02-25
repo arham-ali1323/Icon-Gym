@@ -105,8 +105,8 @@ class ApiClient {
       body: JSON.stringify(credentials),
     });
     
-    if (response.success && response.data?.token) {
-      this.setToken(response.data.token);
+    if (response.success && (response.data as any)?.token) {
+      this.setToken((response.data as any).token);
     }
     
     return response;
