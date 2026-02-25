@@ -1,0 +1,277 @@
+# German Fitness - Frontend Integration Guide
+
+This guide shows how to connect your Next.js frontend to the Laravel backend API.
+
+## API Base URL Configuration
+
+Create or update your `.env.local` file in your Next.js project:
+
+```env
+# Laravel API Configuration
+NEXT_PUBLIC_API_URL=http://localhost:8000/api
+API_URL=http://localhost:8000/api
+
+# For production
+# NEXT_PUBLIC_API_URL=https://api.germanfitness.com/api
+```
+
+## API Client Setup
+
+Create `lib/api.ts`:
+
+```typescript
+// lib/api.ts
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+
+// Helper to get auth token
+const getToken = () => {
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem('token');
+  }
+  return null;
+};
+
+// Generic fetch wrapper
+export async function apiClient(
+  endpoint: string,
+  options: RequestInit = {}
+) {
+  const url = `${API_URL}${endpoint}`;
+  
+  const headers: HeadersInit = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    ...options.headers,
+  };
+
+  // Add auth token if available
+  const token = getToken();
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`;
+  }
+
+  const config: RequestInit = {
+    ...options,
+    headers,
+    credentials: 'include',
+  };
+
+  const response = await fetch(url, config);
+  
+  // Handle 401 Unauthorized
+  if (response.status === 401) {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    window.location.href = '/login';
+    return;
+  }
+
+  const data = await response.json();
+  
+  if (!response.ok) {
+    throw new Error(data.message || 'API request failed');
+  }
+
+  return data;
+}
+
+// API Methods
+export const api = {
+  get: (endpoint: string) => apiClient(endpoint, { method: 'GET' }),
+  post: (endpoint: string, body: any) => 
+    apiClient(endpoint, { method: 'POST', body: JSON.stringify(body) }),
+  put: (endpoint: string, body: any) => 
+    apiClient(endpoint, { method: 'PUT', body: JSON.stringify(body) }),
+  delete: (endpoint: string) => apiClient(endpoint, { method: 'DELETE' }),
+};
+```
+
+## Authentication Integration
+
+### Login Page
+
+```typescript
+'use client';
+
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { api } from '@/lib/api';
+
+export default function LoginPage() {
+  const router = useRouter();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+
+    try {
+      const response = await api.post('/login', { email, password });
+      
+      if (response.success) {
+        localStorage.setItem('token', response.data.token);
+        localStorage.setItem('user', JSON.stringify(response.data.user));
+        router.push('/dashboard');
+      }
+    } catch (err: any) {
+      setError(err.message || 'Login failed');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      {/* Form fields */}
+    </form>
+  );
+}
+```
+
+## Trainers Integration
+
+```typescript
+'use client';
+
+import { useEffect, useState } from 'react';
+import { api } from '@/lib/api';
+
+export default function TrainersList() {
+  const [trainers, setTrainers] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    api.get('/trainers').then(response => {
+      if (response.success) {
+        setTrainers(response.data);
+      }
+      setLoading(false);
+    });
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {trainers.map((trainer: any) => (
+        <div key={trainer.id} className="bg-white rounded-lg shadow">
+          <img src={trainer.image} alt={trainer.name} />
+          <h3>{trainer.name}</h3>
+          <p>{trainer.specialization}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+```
+
+## Classes/Schedule Integration
+
+```typescript
+'use client';
+
+import { useEffect, useState } from 'react';
+import { api } from '@/lib/api';
+
+export default function ClassSchedule() {
+  const [classes, setClasses] = useState([]);
+  const [selectedDay, setSelectedDay] = useState(1);
+
+  useEffect(() => {
+    api.get('/classes/weekly-schedule').then(response => {
+      if (response.success) {
+        setClasses(response.data);
+      }
+    });
+  }, []);
+
+  const handleBook = async (classId: number) => {
+    const response = await api.post('/bookings', {
+      class_schedule_id: classId,
+      booking_date: new Date().toISOString().split('T')[0],
+    });
+    
+    if (response.success) {
+      alert('Booked successfully!');
+    }
+  };
+
+  return (
+    <div>
+      {/* Day selector and class list */}
+    </div>
+  );
+}
+```
+
+## Membership Plans Integration
+
+```typescript
+'use client';
+
+import { useEffect, useState } from 'react';
+import { api } from '@/lib/api';
+
+export default function PricingSection() {
+  const [plans, setPlans] = useState([]);
+
+  useEffect(() => {
+    api.get('/membership-plans').then(response => {
+      if (response.success) {
+        setPlans(response.data);
+      }
+    });
+  }, []);
+
+  const handleSubscribe = async (planId: number) => {
+    const response = await api.post('/subscriptions', {
+      plan_id: planId,
+      payment_method: 'credit_card',
+    });
+    
+    if (response.success) {
+      alert('Subscribed successfully!');
+    }
+  };
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {plans.map((plan: any) => (
+        <div key={plan.id} className="bg-white rounded-lg shadow p-6">
+          <h3>{plan.name}</h3>
+          <p>{plan.formatted_price}</p>
+          <ul>
+            {plan.features.map((feature: string, i: number) => (
+              <li key={i}>{feature}</li>
+            ))}
+          </ul>
+          <button onClick={() => handleSubscribe(plan.id)}>
+            Subscribe
+          </button>
+        </div>
+      ))}
+    </div>
+  );
+}
+```
+
+## API Endpoints Reference
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/register` | User registration |
+| POST | `/api/login` | User login |
+| POST | `/api/logout` | User logout |
+| GET | `/api/user` | Get current user |
+| GET | `/api/trainers` | List all trainers |
+| GET | `/api/classes` | List all classes |
+| GET | `/api/classes/weekly-schedule` | Get weekly schedule |
+| GET | `/api/membership-plans` | List all plans |
+| GET | `/api/bookings` | List user bookings |
+| POST | `/api/bookings` | Create booking |
+| GET | `/api/subscriptions` | List subscriptions |
+| POST | `/api/subscriptions` | Create subscription |
