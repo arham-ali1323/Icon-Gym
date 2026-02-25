@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Orbitron, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/providers/session-provider";
+import { AuthProvider } from "@/components/providers/auth-provider";
 import { ActiveThemeProvider } from "@/components/dashboard/active-theme";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
@@ -19,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "German Fitness - Complete Gym Management System",
+  title: "Icon Gym - Complete Gym Management System",
   description: "Professional gym management system with member tracking, class scheduling, and payment processing",
   themeColor: "#FF6B35",
   icons: {
@@ -54,13 +55,15 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <ActiveThemeProvider>
-          <Providers>
-            <Navbar />
-            <main>
-              {children}
-            </main>
-            <Footer />
-          </Providers>
+          <AuthProvider>
+            <Providers>
+              <Navbar />
+              <main>
+                {children}
+              </main>
+              <Footer />
+            </Providers>
+          </AuthProvider>
         </ActiveThemeProvider>
       </body>
     </html>
