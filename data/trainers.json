@@ -1,0 +1,248 @@
+[
+  {
+    "id": 1,
+    "name": "Marcus Stone",
+    "specialty": "Strength & Conditioning",
+    "experience": "12 years",
+    "image": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=400&h=500&fit=crop",
+    "bio": "Marcus is a certified strength and conditioning specialist with over 12 years of experience helping athletes and fitness enthusiasts achieve their peak performance.",
+    "certifications": ["NSCA-CSCS", "ACSM-CPT"],
+    "social": {
+      "instagram": "https://instagram.com/marcusstone",
+      "facebook": "https://facebook.com/marcusstone",
+      "twitter": "https://twitter.com/marcusstone"
+    },
+    "phone": "+78 911 987 321",
+    "email": "marcus.stone@germanfitness.com",
+    "education": "Bachelor's in Exercise Science, University of Sports Medicine",
+    "workExperience": [
+      "HEAD STRENGTH COACH AT BERLIN PERFORMANCE CENTER",
+      "ASSISTANT STRENGTH COACH AT NATIONAL SPORTS ACADEMY",
+      "PERSONAL TRAINER AT ELITE FITNESS STUDIO",
+      "STRENGTH CONDITIONING INTERN AT PRO SPORTS CLUB"
+    ],
+    "skills": [
+      { "name": "Strength Training", "percentage": 95 },
+      { "name": "Olympic Lifting", "percentage": 88 },
+      { "name": "Sports Conditioning", "percentage": 92 },
+      { "name": "Injury Prevention", "percentage": 85 }
+    ],
+    "detailedCertifications": [
+      {
+        "number": "1",
+        "title": "NSCA-CSCS",
+        "description": "Certified Strength and Conditioning Specialist - National Strength and Conditioning Association"
+      },
+      {
+        "number": "2",
+        "title": "ACSM-CPT",
+        "description": "Certified Personal Trainer - American College of Sports Medicine"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Alex Rivera",
+    "specialty": "HIIT & Performance",
+    "experience": "8 years",
+    "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=500&fit=crop",
+    "bio": "Alex specializes in high-intensity interval training and performance coaching, helping clients burn fat and build endurance efficiently.",
+    "certifications": ["ACSM-CPT", "FMS"],
+    "social": {
+      "instagram": "https://instagram.com/alexrivera",
+      "facebook": "https://facebook.com/alexrivera",
+      "twitter": "https://twitter.com/alexrivera"
+    },
+    "phone": "+78 922 876 432",
+    "email": "alex.rivera@germanfitness.com",
+    "education": "Master's in Kinesiology, German Sports University",
+    "workExperience": [
+      "HIIT SPECIALIST AT URBAN FITNESS HUB",
+      "PERFORMANCE COACH AT ATHLETIC DEVELOPMENT CENTER",
+      "GROUP FITNESS INSTRUCTOR AT POWERHOUSE GYM",
+      "PERSONAL TRAINER AT FIT LIFE STUDIO"
+    ],
+    "skills": [
+      { "name": "HIIT Training", "percentage": 98 },
+      { "name": "Metabolic Conditioning", "percentage": 91 },
+      { "name": "Cardio Programming", "percentage": 87 },
+      { "name": "Group Fitness", "percentage": 84 }
+    ],
+    "detailedCertifications": [
+      {
+        "number": "1",
+        "title": "ACSM-CPT",
+        "description": "Certified Personal Trainer - American College of Sports Medicine"
+      },
+      {
+        "number": "2",
+        "title": "FMS",
+        "description": "Functional Movement Systems Certified"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sarah Mitchell",
+    "specialty": "Yoga & Flexibility",
+    "experience": "10 years",
+    "image": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=400&h=500&fit=crop",
+    "bio": "Sarah is a certified yoga instructor and flexibility expert, guiding clients through mindful movement and stress relief practices.",
+    "certifications": ["RYT-500", "CYT"],
+    "social": {
+      "instagram": "https://instagram.com/sarahmitchell",
+      "facebook": "https://facebook.com/sarahmitchell",
+      "twitter": "https://twitter.com/sarahmitchell"
+    },
+    "phone": "+78 933 765 543",
+    "email": "sarah.mitchell@germanfitness.com",
+    "education": "Advanced Yoga Teacher Training, International Yoga Federation",
+    "workExperience": [
+      "SENIOR YOGA INSTRUCTOR AT MINDFULNESS STUDIO",
+      "FLEXIBILITY COACH AT WELLNESS CENTER",
+      "YOGA THERAPIST AT HOLISTIC HEALTH CLINIC",
+      "GROUP YOGA INSTRUCTOR AT SERENITY YOGA SHALA"
+    ],
+    "skills": [
+      { "name": "Hatha Yoga", "percentage": 96 },
+      { "name": "Vinyasa Flow", "percentage": 93 },
+      { "name": "Flexibility Training", "percentage": 90 },
+      { "name": "Meditation", "percentage": 88 }
+    ],
+    "detailedCertifications": [
+      {
+        "number": "1",
+        "title": "RYT-500",
+        "description": "Registered Yoga Teacher 500-Hour - Yoga Alliance"
+      },
+      {
+        "number": "2",
+        "title": "CYT",
+        "description": "Certified Yoga Therapist - International Association of Yoga Therapists"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Jake Wilson",
+    "specialty": "CrossFit Training",
+    "experience": "9 years",
+    "image": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=400&h=500&fit=crop",
+    "bio": "Jake is a CrossFit Level 2 trainer passionate about functional fitness, helping clients develop strength, power, and overall athleticism.",
+    "certifications": ["CrossFit L2", "USAW"],
+    "social": {
+      "instagram": "https://instagram.com/jakewilson",
+      "facebook": "https://facebook.com/jakewilson",
+      "twitter": "https://twitter.com/jakewilson"
+    },
+    "phone": "+78 944 654 654",
+    "email": "jake.wilson@germanfitness.com",
+    "education": "Bachelor's in Sports Science, European Fitness Academy",
+    "workExperience": [
+      "HEAD CROSSFIT COACH AT IRON TEMPLE",
+      "CROSSFIT COACH AT FUNCTIONAL FITNESS BOX",
+      "STRENGTH & CONDITIONING COACH AT ATHLETE PERFORMANCE LAB",
+      "PERSONAL TRAINER AT CROSSFIT UNLIMITED"
+    ],
+    "skills": [
+      { "name": "CrossFit Training", "percentage": 94 },
+      { "name": "Olympic Weightlifting", "percentage": 89 },
+      { "name": "Gymnastics", "percentage": 82 },
+      { "name": "Functional Movement", "percentage": 91 }
+    ],
+    "detailedCertifications": [
+      {
+        "number": "1",
+        "title": "CrossFit L2",
+        "description": "CrossFit Level 2 Trainer Certificate"
+      },
+      {
+        "number": "2",
+        "title": "USAW",
+        "description": "USA Weightlifting Sports Performance Coach"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "David Chen",
+    "specialty": "Boxing & Cardio",
+    "experience": "11 years",
+    "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=500&fit=crop",
+    "bio": "David brings 11 years of boxing expertise to help clients improve cardiovascular health, coordination, and self-defense skills.",
+    "certifications": ["ABAE", "ACSM-CPT"],
+    "social": {
+      "instagram": "https://instagram.com/davidchen",
+      "facebook": "https://facebook.com/davidchen",
+      "twitter": "https://twitter.com/davidchen"
+    },
+    "phone": "+78 955 543 765",
+    "email": "david.chen@germanfitness.com",
+    "education": "Professional Boxing Certification, International Boxing Association",
+    "workExperience": [
+      "HEAD BOXING COACH AT CHAMPIONS GYM",
+      "BOXING INSTRUCTOR AT FIGHT CLUB FITNESS",
+      "CARDIO SPECIALIST AT HIGH INTENSITY STUDIO",
+      "PERSONAL TRAINER AT BOXING ACADEMY"
+    ],
+    "skills": [
+      { "name": "Boxing Technique", "percentage": 97 },
+      { "name": "Cardio Conditioning", "percentage": 93 },
+      { "name": "Self-Defense", "percentage": 89 },
+      { "name": "Pad Work", "percentage": 95 }
+    ],
+    "detailedCertifications": [
+      {
+        "number": "1",
+        "title": "ABAE",
+        "description": "Amateur Boxing Association of England Coach Certification"
+      },
+      {
+        "number": "2",
+        "title": "ACSM-CPT",
+        "description": "Certified Personal Trainer - American College of Sports Medicine"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Michael Brooks",
+    "specialty": "Bodybuilding",
+    "experience": "15 years",
+    "image": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&h=500&fit=crop",
+    "bio": "Michael is a seasoned bodybuilding coach with 15 years of experience, specializing in muscle growth, nutrition, and competition preparation.",
+    "certifications": ["IFBB Pro", "ISSN"],
+    "social": {
+      "instagram": "https://instagram.com/michaelbrooks",
+      "facebook": "https://facebook.com/michaelbrooks",
+      "twitter": "https://twitter.com/michaelbrooks"
+    },
+    "phone": "+78 966 432 876",
+    "email": "michael.brooks@germanfitness.com",
+    "education": "Master's in Sports Nutrition, International Fitness Institute",
+    "workExperience": [
+      "PRO BODYBUILDING COACH AT MUSCLE FACTORY",
+      "NUTRITION SPECIALIST AT PHYSIQUE ENHANCEMENT CENTER",
+      "PERSONAL TRAINER AT GOLD'S GYM",
+      "COMPETITION PREP COACH AT ELITE PHYSIQUE STUDIO"
+    ],
+    "skills": [
+      { "name": "Bodybuilding", "percentage": 98 },
+      { "name": "Nutrition Planning", "percentage": 94 },
+      { "name": "Competition Prep", "percentage": 96 },
+      { "name": "Muscle Hypertrophy", "percentage": 92 }
+    ],
+    "detailedCertifications": [
+      {
+        "number": "1",
+        "title": "IFBB Pro",
+        "description": "International Federation of Bodybuilding and Fitness Professional League"
+      },
+      {
+        "number": "2",
+        "title": "ISSN",
+        "description": "International Society of Sports Nutrition Certified Sports Nutritionist"
+      }
+    ]
+  }
+]

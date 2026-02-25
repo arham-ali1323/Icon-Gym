@@ -1,0 +1,212 @@
+// This is your Prisma schema file,
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+/// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+// Enums are not supported in SQLite, using String instead
+
+model User {
+  id            String    @id @default(cuid())
+  name          String
+  email         String    @unique
+  password      String?
+  image         String?
+  phone         String?
+  dateOfBirth   DateTime?
+  gender        String?
+  role          String    @default("USER")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  subscriptions Subscription[]
+  attendance    Attendance[]
+  payments      Payment[]
+  workoutPlans  WorkoutPlan[]
+  dietPlans     DietPlan[]
+
+  @@map("users")
+}
+
+model Trainer {
+  id          String   @id @default(cuid())
+  name        String
+  email       String   @unique
+  phone       String
+  image       String?
+  specialization String
+  experience  Int
+  bio         String?
+  facebook    String?
+  instagram   String?
+  twitter     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  workoutPlans WorkoutPlan[]
+
+  @@map("trainers")
+}
+
+model MembershipPlan {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  price       Float
+  duration    Int      // in days
+  features    String   // JSON string of features
+  isPopular   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  subscriptions Subscription[]
+
+  @@map("membership_plans")
+}
+
+model Subscription {
+  id          String           @id @default(cuid())
+  userId      String
+  planId      String
+  status      String           @default("ACTIVE")
+  startDate   DateTime
+  endDate     DateTime
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  user User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  plan MembershipPlan   @relation(fields: [planId], references: [id])
+
+  @@map("subscriptions")
+}
+
+model WorkoutPlan {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  exercises   String   // JSON string of exercises with sets, reps, rest
+  duration    Int      // in minutes
+  difficulty  String   // Beginner, Intermediate, Advanced
+  trainerId   String?
+  userId      String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  trainer Trainer? @relation(fields: [trainerId], references: [id])
+  user    User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("workout_plans")
+}
+
+model DietPlan {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  meals       String   // JSON string of meals with ingredients and macros
+  calories    Int
+  protein     Int
+  carbs       Int
+  fats        Int
+  userId      String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user User? @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("diet_plans")
+}
+
+model Attendance {
+  id        String           @id @default(cuid())
+  userId    String
+  date      DateTime
+  checkIn   DateTime
+  checkOut  DateTime?
+  status    String           @default("PRESENT")
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+  @@map("attendance")
+}
+
+model Payment {
+  id              String        @id @default(cuid())
+  userId          String
+  amount          Float
+  currency        String        @default("usd")
+  status          String        @default("PENDING")
+  stripePaymentId String?       @unique
+  description     String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("payments")
+}
+
+model Gallery {
+  id        String   @id @default(cuid())
+  title     String
+  image     String
+  category  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("gallery")
+}
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  image     String?
+  rating    Int      @default(5)
+  content   String
+  position  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("testimonials")
+}
+
+model Event {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  image       String?
+  date        DateTime
+  location    String
+  category    String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("events")
+}
+
+model ClassSchedule {
+  id          String   @id @default(cuid())
+  className   String
+  instructor  String
+  dayOfWeek   Int      // 0-6 (Sunday to Saturday)
+  startTime   String   // "09:00"
+  endTime     String   // "10:00"
+  capacity    Int
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("class_schedules")
+}
+
+// Install the following packages for drag-and-drop functionality
+// npm install @dnd-kit/core @dnd-kit/modifiers @dnd-kit/sortable @dnd-kit/utilities

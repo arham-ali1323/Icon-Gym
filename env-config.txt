@@ -1,0 +1,32 @@
+# ===============================
+# Database
+# ===============================
+DATABASE_URL="postgresql://postgres:password@localhost:5432/gym_management"
+
+# ===============================
+# NextAuth
+# ===============================
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="replace-with-a-long-random-secret"
+
+# Optional but recommended
+NEXTAUTH_URL_INTERNAL="http://localhost:3000"
+
+# ===============================
+# Auth Providers (Optional)
+# ===============================
+GOOGLE_CLIENT_ID=""
+GOOGLE_CLIENT_SECRET=""
+
+# ===============================
+# Payments (Stripe)
+# ===============================
+STRIPE_SECRET_KEY=""
+STRIPE_WEBHOOK_SECRET=""
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=""
+
+# ===============================
+# App Config
+# ===============================
+NEXT_PUBLIC_APP_NAME="Gym Management System"
+NEXT_PUBLIC_APP_URL="http://localhost:3000"

@@ -1,0 +1,1406 @@
+{
+    "categories":  [
+                       {
+                           "name":  "All Products",
+                           "id":  "all",
+                           "count":  145
+                       },
+                       {
+                           "name":  "Weights",
+                           "id":  "weights",
+                           "count":  45
+                       },
+                       {
+                           "name":  "Equipment",
+                           "id":  "equipment",
+                           "count":  38
+                       },
+                       {
+                           "name":  "Benches",
+                           "id":  "benches",
+                           "count":  28
+                       },
+                       {
+                           "name":  "Cardio",
+                           "id":  "cardio",
+                           "count":  34
+                       }
+                   ],
+    "products":  [
+                     {
+                         "id":  1,
+                         "name":  "ATTREZZO DUMBBELL SET - 23 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  167,
+                         "image":  "https://images.unsplash.com/photo-1500254041?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  2,
+                         "category":  "equipment",
+                         "featured":  true,
+                         "price":  350,
+                         "name":  "ATTREZZO BARBELL - 23 PCS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1547729323?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  3,
+                         "name":  "ATTREZZO KETTLEBELL - 30 KG",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  363,
+                         "image":  "https://images.unsplash.com/photo-1626812112?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  4,
+                         "name":  "ATTREZZO WEIGHT PLATES - 36 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  381,
+                         "image":  "https://images.unsplash.com/photo-1553553269?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  5,
+                         "name":  "ATTREZZO RESISTANCE BANDS - 11 PCS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  358,
+                         "image":  "https://images.unsplash.com/photo-1505467496?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  6,
+                         "sale":  true,
+                         "category":  "equipment",
+                         "price":  225,
+                         "name":  "ATTREZZO PULL UP BAR - 8 KG",
+                         "originalPrice":  252,
+                         "image":  "https://images.unsplash.com/photo-1570420823?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  7,
+                         "category":  "benches",
+                         "featured":  true,
+                         "price":  126,
+                         "name":  "ATTREZZO PUSH UP STANDS - 48 LBS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1541012714?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  8,
+                         "name":  "ATTREZZO JUMP ROPE - 32 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  148,
+                         "image":  "https://images.unsplash.com/photo-1682140373?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  9,
+                         "category":  "weights",
+                         "featured":  true,
+                         "price":  70,
+                         "name":  "ATTREZZO MEDICINE BALL - 44 KG",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1546757911?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  10,
+                         "name":  "ATTREZZO SLAM BALL - 44 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  458,
+                         "image":  "https://images.unsplash.com/photo-1556606815?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  11,
+                         "name":  "ATTREZZO BATTLE ROPES - 17 PCS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  361,
+                         "image":  "https://images.unsplash.com/photo-1555133977?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  12,
+                         "name":  "ATTREZZO AGILITY LADDER - 8 KG",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  131,
+                         "image":  "https://images.unsplash.com/photo-1635922979?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  13,
+                         "name":  "ATTREZZO CONE MARKERS - 35 LBS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  30,
+                         "image":  "https://images.unsplash.com/photo-1512300219?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  14,
+                         "category":  "equipment",
+                         "featured":  true,
+                         "price":  99,
+                         "name":  "ATTREZZO FOAM ROLLER - 40 PCS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1503771538?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  15,
+                         "name":  "ATTREZZO MASSAGE GUN - 43 KG",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  200,
+                         "image":  "https://images.unsplash.com/photo-1684630353?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  16,
+                         "name":  "ATTREZZO WEIGHT LIFTING BELT - 36 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  310,
+                         "image":  "https://images.unsplash.com/photo-1525570380?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  17,
+                         "name":  "ATTREZZO WRIST WRAPS - 5 PCS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  156,
+                         "image":  "https://images.unsplash.com/photo-1634424662?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "id":  18,
+                         "name":  "ATTREZZO KNEE SLEEVES - 33 KG",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  167,
+                         "image":  "https://images.unsplash.com/photo-1616716478?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  19,
+                         "name":  "ATTREZZO LIFTING STRAPS - 8 LBS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  183,
+                         "image":  "https://images.unsplash.com/photo-1581246936?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  20,
+                         "sale":  true,
+                         "category":  "cardio",
+                         "price":  109,
+                         "name":  "ATTREZZO CHALK - 13 PCS",
+                         "originalPrice":  184,
+                         "image":  "https://images.unsplash.com/photo-1657814923?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  21,
+                         "sale":  true,
+                         "category":  "weights",
+                         "price":  160,
+                         "name":  "ATTREZZO POWER RACK - 49 KG",
+                         "originalPrice":  239,
+                         "image":  "https://images.unsplash.com/photo-1619352023?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  22,
+                         "name":  "ATTREZZO SQUAT RACK - 29 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  139,
+                         "image":  "https://images.unsplash.com/photo-1526039162?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  23,
+                         "sale":  true,
+                         "category":  "benches",
+                         "price":  92,
+                         "name":  "ATTREZZO BENCH PRESS - 47 PCS",
+                         "originalPrice":  188,
+                         "image":  "https://images.unsplash.com/photo-1689029711?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  24,
+                         "sale":  true,
+                         "category":  "cardio",
+                         "price":  149,
+                         "name":  "ATTREZZO INCLINE BENCH - 43 KG",
+                         "originalPrice":  161,
+                         "image":  "https://images.unsplash.com/photo-1512510467?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  25,
+                         "name":  "ATTREZZO DECLINE BENCH - 25 LBS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  365,
+                         "image":  "https://images.unsplash.com/photo-1537934772?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  26,
+                         "sale":  true,
+                         "category":  "equipment",
+                         "price":  317,
+                         "name":  "ATTREZZO CABLE MACHINE - 44 PCS",
+                         "originalPrice":  366,
+                         "image":  "https://images.unsplash.com/photo-1523062679?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  27,
+                         "sale":  true,
+                         "category":  "benches",
+                         "price":  313,
+                         "name":  "ATTREZZO LEG PRESS - 35 KG",
+                         "originalPrice":  330,
+                         "image":  "https://images.unsplash.com/photo-1623685012?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  28,
+                         "sale":  true,
+                         "category":  "cardio",
+                         "price":  48,
+                         "name":  "ATTREZZO HACK SQUAT - 9 LBS",
+                         "originalPrice":  133,
+                         "image":  "https://images.unsplash.com/photo-1561727354?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  29,
+                         "sale":  true,
+                         "category":  "weights",
+                         "price":  319,
+                         "name":  "ATTREZZO LEG CURL - 28 PCS",
+                         "originalPrice":  377,
+                         "image":  "https://images.unsplash.com/photo-1587794067?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  30,
+                         "name":  "ATTREZZO LEG EXTENSION - 32 KG",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  240,
+                         "image":  "https://images.unsplash.com/photo-1599522138?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  31,
+                         "category":  "benches",
+                         "featured":  true,
+                         "price":  168,
+                         "name":  "ATTREZZO LAT PULLDOWN - 16 LBS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1562807490?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  32,
+                         "name":  "ATTREZZO SEATED ROW - 21 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  400,
+                         "image":  "https://images.unsplash.com/photo-1655521609?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  33,
+                         "sale":  true,
+                         "category":  "weights",
+                         "price":  369,
+                         "name":  "ATTREZZO PEC DECK - 45 KG",
+                         "originalPrice":  447,
+                         "image":  "https://images.unsplash.com/photo-1583313309?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  34,
+                         "category":  "equipment",
+                         "featured":  true,
+                         "price":  348,
+                         "name":  "ATTREZZO SHOULDER PRESS - 28 LBS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1566829362?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  35,
+                         "name":  "ATTREZZO SMITH MACHINE - 28 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  412,
+                         "image":  "https://images.unsplash.com/photo-1521143573?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  36,
+                         "name":  "ATTREZZO TREADMILL - 43 KG",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  253,
+                         "image":  "https://images.unsplash.com/photo-1561388589?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  37,
+                         "sale":  true,
+                         "category":  "weights",
+                         "price":  337,
+                         "name":  "ATTREZZO ELLIPTICAL - 11 LBS",
+                         "originalPrice":  399,
+                         "image":  "https://images.unsplash.com/photo-1528516912?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  38,
+                         "name":  "ATTREZZO STATIONARY BIKE - 9 PCS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  412,
+                         "image":  "https://images.unsplash.com/photo-1583371626?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  39,
+                         "sale":  true,
+                         "category":  "benches",
+                         "price":  235,
+                         "name":  "ATTREZZO ROWING MACHINE - 24 KG",
+                         "originalPrice":  304,
+                         "image":  "https://images.unsplash.com/photo-1693630417?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  40,
+                         "category":  "cardio",
+                         "featured":  true,
+                         "price":  361,
+                         "name":  "ATTREZZO STAIR CLIMBER - 48 LBS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1611871378?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  41,
+                         "name":  "ATTREZZO SPIN BIKE - 9 PCS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  400,
+                         "image":  "https://images.unsplash.com/photo-1613430267?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  42,
+                         "sale":  true,
+                         "category":  "equipment",
+                         "price":  218,
+                         "name":  "ATTREZZO AIR BIKE - 20 KG",
+                         "originalPrice":  311,
+                         "image":  "https://images.unsplash.com/photo-1516369527?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  43,
+                         "name":  "ATTREZZO SKIERG - 34 LBS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  452,
+                         "image":  "https://images.unsplash.com/photo-1693242932?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  44,
+                         "name":  "ATTREZZO FAN BIKE - 38 PCS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  326,
+                         "image":  "https://images.unsplash.com/photo-1528766978?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  45,
+                         "name":  "ATTREZZO TREADCLIMBER - 22 KG",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  75,
+                         "image":  "https://images.unsplash.com/photo-1536713960?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  46,
+                         "sale":  true,
+                         "category":  "equipment",
+                         "price":  144,
+                         "name":  "ATTREZZO OLYMPIC BAR - 10 LBS",
+                         "originalPrice":  200,
+                         "image":  "https://images.unsplash.com/photo-1692365420?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  47,
+                         "name":  "ATTREZZO EZ CURL BAR - 43 PCS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  204,
+                         "image":  "https://images.unsplash.com/photo-1582987176?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  48,
+                         "name":  "ATTREZZO TRICEP BAR - 27 KG",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  202,
+                         "image":  "https://images.unsplash.com/photo-1691360640?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  49,
+                         "name":  "ATTREZZO SWISS BAR - 41 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  295,
+                         "image":  "https://images.unsplash.com/photo-1607952041?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "id":  50,
+                         "name":  "ATTREZZO FAT BAR - 9 PCS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  59,
+                         "image":  "https://images.unsplash.com/photo-1675761683?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  51,
+                         "name":  "ATTREZZO LOG BAR - 47 KG",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  495,
+                         "image":  "https://images.unsplash.com/photo-1637355994?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  52,
+                         "name":  "ATTREZZO THICK BAR - 34 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  286,
+                         "image":  "https://images.unsplash.com/photo-1653684932?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  53,
+                         "name":  "ATTREZZO WOMENS BAR - 46 PCS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  415,
+                         "image":  "https://images.unsplash.com/photo-1669696966?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "id":  54,
+                         "name":  "ATTREZZO TECHNIQUE BAR - 6 KG",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  213,
+                         "image":  "https://images.unsplash.com/photo-1543323274?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  55,
+                         "name":  "ATTREZZO SAFETY SQUAT BAR - 19 LBS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  433,
+                         "image":  "https://images.unsplash.com/photo-1523007358?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  56,
+                         "category":  "cardio",
+                         "featured":  true,
+                         "price":  114,
+                         "name":  "ATTREZZO BUMPER PLATES - 49 PCS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1692640137?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  57,
+                         "category":  "weights",
+                         "featured":  true,
+                         "price":  364,
+                         "name":  "ATTREZZO IRON PLATES - 43 KG",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1528994693?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  58,
+                         "name":  "ATTREZZO CHANGE PLATES - 45 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  290,
+                         "image":  "https://images.unsplash.com/photo-1518810363?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  59,
+                         "sale":  true,
+                         "category":  "benches",
+                         "featured":  true,
+                         "price":  179,
+                         "name":  "ATTREZZO MICRO PLATES - 22 PCS",
+                         "originalPrice":  278,
+                         "image":  "https://images.unsplash.com/photo-1548433140?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  60,
+                         "category":  "cardio",
+                         "featured":  true,
+                         "price":  152,
+                         "name":  "ATTREZZO TRAINING PLATES - 35 KG",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1675553462?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  61,
+                         "sale":  true,
+                         "category":  "weights",
+                         "price":  24,
+                         "name":  "ATTREZZO COLLARS - 13 LBS",
+                         "originalPrice":  70,
+                         "image":  "https://images.unsplash.com/photo-1524078946?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  62,
+                         "name":  "ATTREZZO CLIPS - 32 PCS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  494,
+                         "image":  "https://images.unsplash.com/photo-1687930259?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  63,
+                         "name":  "ATTREZZO SPRING CLIPS - 12 KG",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  100,
+                         "image":  "https://images.unsplash.com/photo-1680207104?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  64,
+                         "sale":  true,
+                         "category":  "cardio",
+                         "featured":  true,
+                         "price":  228,
+                         "name":  "ATTREZZO LOCK JAWS - 5 LBS",
+                         "originalPrice":  255,
+                         "image":  "https://images.unsplash.com/photo-1518504150?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  65,
+                         "name":  "ATTREZZO MUSCLE CLIPS - 27 PCS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  239,
+                         "image":  "https://images.unsplash.com/photo-1513756712?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "id":  66,
+                         "name":  "ATTREZZO JERSEY GRIP - 39 KG",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  430,
+                         "image":  "https://images.unsplash.com/photo-1513366253?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  67,
+                         "name":  "ATTREZZO HOOK GRIP - 45 LBS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  68,
+                         "image":  "https://images.unsplash.com/photo-1653480935?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  68,
+                         "name":  "ATTREZZO STRAPS - 33 PCS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  460,
+                         "image":  "https://images.unsplash.com/photo-1665440949?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  69,
+                         "category":  "weights",
+                         "featured":  true,
+                         "price":  411,
+                         "name":  "ATTREZZO HOOKS - 38 KG",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1587786246?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  70,
+                         "name":  "ATTREZZO LIFTING CHAINS - 22 LBS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  182,
+                         "image":  "https://images.unsplash.com/photo-1627626696?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  71,
+                         "name":  "ATTREZZO BOX JUMP - 24 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  48,
+                         "image":  "https://images.unsplash.com/photo-1688791347?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  72,
+                         "name":  "ATTREZZO PLYO BOX - 38 KG",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  239,
+                         "image":  "https://images.unsplash.com/photo-1609812330?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  73,
+                         "sale":  true,
+                         "category":  "weights",
+                         "price":  465,
+                         "name":  "ATTREZZO STEP UP BOX - 31 LBS",
+                         "originalPrice":  564,
+                         "image":  "https://images.unsplash.com/photo-1657790094?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  74,
+                         "name":  "ATTREZZO MEDICINE BALL WALL - 33 PCS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  429,
+                         "image":  "https://images.unsplash.com/photo-1568183160?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  75,
+                         "sale":  true,
+                         "category":  "benches",
+                         "price":  250,
+                         "name":  "ATTREZZO TARGET WALL - 44 KG",
+                         "originalPrice":  285,
+                         "image":  "https://images.unsplash.com/photo-1592290221?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  76,
+                         "category":  "cardio",
+                         "featured":  true,
+                         "price":  136,
+                         "name":  "ATTREZZO SAND BAG - 21 LBS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1696709454?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  77,
+                         "name":  "ATTREZZO KEG - 46 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  490,
+                         "image":  "https://images.unsplash.com/photo-1608162674?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "id":  78,
+                         "name":  "ATTREZZO TIRE - 21 KG",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  80,
+                         "image":  "https://images.unsplash.com/photo-1545024124?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  79,
+                         "sale":  true,
+                         "category":  "benches",
+                         "price":  127,
+                         "name":  "ATTREZZO SLED - 16 LBS",
+                         "originalPrice":  155,
+                         "image":  "https://images.unsplash.com/photo-1656976083?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  80,
+                         "name":  "ATTREZZO HARNESS - 10 PCS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  130,
+                         "image":  "https://images.unsplash.com/photo-1674634502?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  81,
+                         "sale":  true,
+                         "category":  "weights",
+                         "price":  294,
+                         "name":  "ATTREZZO GYMNASTIC RINGS - 10 KG",
+                         "originalPrice":  325,
+                         "image":  "https://images.unsplash.com/photo-1645794505?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  82,
+                         "name":  "ATTREZZO PARALLETTE - 23 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  309,
+                         "image":  "https://images.unsplash.com/photo-1612528944?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  83,
+                         "sale":  true,
+                         "category":  "benches",
+                         "price":  189,
+                         "name":  "ATTREZZO CLIMBING ROPE - 40 PCS",
+                         "originalPrice":  280,
+                         "image":  "https://images.unsplash.com/photo-1566421640?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  84,
+                         "name":  "ATTREZZO BATTLE ROPE - 23 KG",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  490,
+                         "image":  "https://images.unsplash.com/photo-1613948536?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  85,
+                         "sale":  true,
+                         "category":  "weights",
+                         "price":  25,
+                         "name":  "ATTREZZO TRX - 49 LBS",
+                         "originalPrice":  121,
+                         "image":  "https://images.unsplash.com/photo-1683095562?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  86,
+                         "category":  "equipment",
+                         "featured":  true,
+                         "price":  470,
+                         "name":  "ATTREZZO SUSPENSION TRAINER - 28 PCS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1683501171?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  87,
+                         "category":  "benches",
+                         "featured":  true,
+                         "price":  465,
+                         "name":  "ATTREZZO RESISTANCE BANDS - 18 KG",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1512687067?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  88,
+                         "name":  "ATTREZZO LOOP BANDS - 38 LBS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  311,
+                         "image":  "https://images.unsplash.com/photo-1556504934?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  89,
+                         "name":  "ATTREZZO TUBING - 29 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  129,
+                         "image":  "https://images.unsplash.com/photo-1680897098?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "id":  90,
+                         "name":  "ATTREZZO THERABAND - 44 KG",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  194,
+                         "image":  "https://images.unsplash.com/photo-1506714958?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  91,
+                         "name":  "ATTREZZO BALANCE BOARD - 15 LBS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  154,
+                         "image":  "https://images.unsplash.com/photo-1687930552?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  92,
+                         "name":  "ATTREZZO WOBBLE BOARD - 15 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  172,
+                         "image":  "https://images.unsplash.com/photo-1685396034?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  93,
+                         "name":  "ATTREZZO BALANCE PAD - 36 KG",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  454,
+                         "image":  "https://images.unsplash.com/photo-1669970756?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "id":  94,
+                         "name":  "ATTREZZO STABILITY DISC - 46 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  442,
+                         "image":  "https://images.unsplash.com/photo-1505010383?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  95,
+                         "name":  "ATTREZZO FOAM ROLLER - 41 PCS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  309,
+                         "image":  "https://images.unsplash.com/photo-1541255671?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  96,
+                         "name":  "ATTREZZO MASSAGE BALL - 9 KG",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  362,
+                         "image":  "https://images.unsplash.com/photo-1680777793?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  97,
+                         "name":  "ATTREZZO TRIGGER POINT - 18 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  190,
+                         "image":  "https://images.unsplash.com/photo-1526730296?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  98,
+                         "category":  "equipment",
+                         "featured":  true,
+                         "price":  437,
+                         "name":  "ATTREZZO ACUPRESSURE MAT - 25 PCS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1639131954?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  99,
+                         "name":  "ATTREZZO RECOVERY BOOTS - 38 KG",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  451,
+                         "image":  "https://images.unsplash.com/photo-1511751787?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  100,
+                         "name":  "ATTREZZO COMPRESSION SLEEVES - 41 LBS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  255,
+                         "image":  "https://images.unsplash.com/photo-1668271335?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  101,
+                         "category":  "weights",
+                         "featured":  true,
+                         "price":  288,
+                         "name":  "ATTREZZO HEART RATE MONITOR - 48 PCS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1627849712?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  102,
+                         "name":  "ATTREZZO FITNESS TRACKER - 6 KG",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  66,
+                         "image":  "https://images.unsplash.com/photo-1509237483?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  103,
+                         "name":  "ATTREZZO SMART WATCH - 43 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  287,
+                         "image":  "https://images.unsplash.com/photo-1642526328?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  104,
+                         "name":  "ATTREZZO GPS WATCH - 31 PCS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  274,
+                         "image":  "https://images.unsplash.com/photo-1654555337?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  105,
+                         "name":  "ATTREZZO CHEST STRAP - 27 KG",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  117,
+                         "image":  "https://images.unsplash.com/photo-1685010889?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "id":  106,
+                         "name":  "ATTREZZO HEADPHONES - 9 LBS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  38,
+                         "image":  "https://images.unsplash.com/photo-1691117141?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  107,
+                         "sale":  true,
+                         "category":  "benches",
+                         "featured":  true,
+                         "price":  295,
+                         "name":  "ATTREZZO EARBUDS - 48 PCS",
+                         "originalPrice":  311,
+                         "image":  "https://images.unsplash.com/photo-1631608665?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  108,
+                         "sale":  true,
+                         "category":  "cardio",
+                         "price":  116,
+                         "name":  "ATTREZZO SPEAKER - 36 KG",
+                         "originalPrice":  137,
+                         "image":  "https://images.unsplash.com/photo-1551345306?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  109,
+                         "sale":  true,
+                         "category":  "weights",
+                         "price":  316,
+                         "name":  "ATTREZZO PHONE HOLDER - 31 LBS",
+                         "originalPrice":  340,
+                         "image":  "https://images.unsplash.com/photo-1551747291?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  110,
+                         "sale":  true,
+                         "category":  "equipment",
+                         "price":  325,
+                         "name":  "ATTREZZO TABLET MOUNT - 43 PCS",
+                         "originalPrice":  422,
+                         "image":  "https://images.unsplash.com/photo-1548141370?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  111,
+                         "name":  "ATTREZZO WATER BOTTLE - 29 KG",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  372,
+                         "image":  "https://images.unsplash.com/photo-1657349610?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  112,
+                         "name":  "ATTREZZO SHAKER BOTTLE - 39 LBS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  255,
+                         "image":  "https://images.unsplash.com/photo-1581392243?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  113,
+                         "name":  "ATTREZZO HYDRATION PACK - 25 PCS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  386,
+                         "image":  "https://images.unsplash.com/photo-1643618520?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  114,
+                         "sale":  true,
+                         "category":  "equipment",
+                         "price":  350,
+                         "name":  "ATTREZZO COOLER - 34 KG",
+                         "originalPrice":  392,
+                         "image":  "https://images.unsplash.com/photo-1550880834?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  115,
+                         "name":  "ATTREZZO INSULATED BOTTLE - 35 LBS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  307,
+                         "image":  "https://images.unsplash.com/photo-1611253267?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  116,
+                         "sale":  true,
+                         "category":  "cardio",
+                         "price":  192,
+                         "name":  "ATTREZZO PROTEIN POWDER - 22 PCS",
+                         "originalPrice":  212,
+                         "image":  "https://images.unsplash.com/photo-1606195001?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  117,
+                         "sale":  true,
+                         "category":  "weights",
+                         "price":  36,
+                         "name":  "ATTREZZO BCAA - 39 KG",
+                         "originalPrice":  58,
+                         "image":  "https://images.unsplash.com/photo-1501504471?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  118,
+                         "sale":  true,
+                         "category":  "equipment",
+                         "price":  358,
+                         "name":  "ATTREZZO CREATINE - 24 LBS",
+                         "originalPrice":  432,
+                         "image":  "https://images.unsplash.com/photo-1695611738?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  119,
+                         "name":  "ATTREZZO PRE WORKOUT - 9 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  190,
+                         "image":  "https://images.unsplash.com/photo-1515875449?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  120,
+                         "category":  "cardio",
+                         "featured":  true,
+                         "price":  438,
+                         "name":  "ATTREZZO POST WORKOUT - 14 KG",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1652079336?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  121,
+                         "name":  "ATTREZZO ENERGY GELS - 27 LBS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  306,
+                         "image":  "https://images.unsplash.com/photo-1660582519?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "id":  122,
+                         "name":  "ATTREZZO PROTEIN BARS - 9 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  373,
+                         "image":  "https://images.unsplash.com/photo-1564461465?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  123,
+                         "sale":  true,
+                         "category":  "benches",
+                         "price":  273,
+                         "name":  "ATTREZZO ENERGY BARS - 19 KG",
+                         "originalPrice":  301,
+                         "image":  "https://images.unsplash.com/photo-1553837018?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  124,
+                         "name":  "ATTREZZO RECOVERY DRINK - 20 LBS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  56,
+                         "image":  "https://images.unsplash.com/photo-1603883304?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  125,
+                         "name":  "ATTREZZO ELECTROLYTES - 27 PCS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  42,
+                         "image":  "https://images.unsplash.com/photo-1510257368?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  126,
+                         "sale":  true,
+                         "category":  "equipment",
+                         "featured":  true,
+                         "price":  419,
+                         "name":  "ATTREZZO GYM BAG - 35 KG",
+                         "originalPrice":  503,
+                         "image":  "https://images.unsplash.com/photo-1684822112?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  127,
+                         "category":  "benches",
+                         "featured":  true,
+                         "price":  21,
+                         "name":  "ATTREZZO BACKPACK - 42 LBS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1606920490?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  128,
+                         "name":  "ATTREZZO DUFFEL BAG - 41 PCS",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  152,
+                         "image":  "https://images.unsplash.com/photo-1518592861?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     },
+                     {
+                         "id":  129,
+                         "name":  "ATTREZZO DRAWSTRING BAG - 45 KG",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  9,
+                         "image":  "https://images.unsplash.com/photo-1676376754?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "id":  130,
+                         "name":  "ATTREZZO SHOE BAG - 28 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  117,
+                         "image":  "https://images.unsplash.com/photo-1621469268?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  131,
+                         "sale":  true,
+                         "category":  "benches",
+                         "price":  418,
+                         "name":  "ATTREZZO TOWEL - 6 PCS",
+                         "originalPrice":  462,
+                         "image":  "https://images.unsplash.com/photo-1515456436?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  5,
+                         "id":  132,
+                         "sale":  true,
+                         "category":  "cardio",
+                         "price":  428,
+                         "name":  "ATTREZZO MICROFIBER TOWEL - 28 KG",
+                         "originalPrice":  506,
+                         "image":  "https://images.unsplash.com/photo-1641762881?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  133,
+                         "category":  "weights",
+                         "featured":  true,
+                         "price":  19,
+                         "name":  "ATTREZZO GYM CHALK - 48 LBS",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1520242858?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  134,
+                         "name":  "ATTREZZO HAND GRIPPER - 17 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  207,
+                         "image":  "https://images.unsplash.com/photo-1538506918?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  135,
+                         "name":  "ATTREZZO GRIP STRENGTHENER - 27 KG",
+                         "rating":  5,
+                         "originalPrice":  null,
+                         "price":  77,
+                         "image":  "https://images.unsplash.com/photo-1619114220?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  136,
+                         "sale":  true,
+                         "category":  "cardio",
+                         "price":  189,
+                         "name":  "ATTREZZO REFLEX BALL - 8 LBS",
+                         "originalPrice":  275,
+                         "image":  "https://images.unsplash.com/photo-1502759310?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  137,
+                         "name":  "ATTREZZO SPEED BAG - 27 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  119,
+                         "image":  "https://images.unsplash.com/photo-1684721708?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "rating":  3,
+                         "id":  138,
+                         "category":  "equipment",
+                         "featured":  true,
+                         "price":  412,
+                         "name":  "ATTREZZO HEAVY BAG - 32 KG",
+                         "originalPrice":  null,
+                         "image":  "https://images.unsplash.com/photo-1645244059?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  139,
+                         "name":  "ATTREZZO BOXING GLOVES - 6 LBS",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  252,
+                         "image":  "https://images.unsplash.com/photo-1631828188?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "rating":  4,
+                         "id":  140,
+                         "sale":  true,
+                         "category":  "cardio",
+                         "price":  393,
+                         "name":  "ATTREZZO HAND WRAPS - 8 PCS",
+                         "originalPrice":  486,
+                         "image":  "https://images.unsplash.com/photo-1552357939?w=400\u0026h=400\u0026fit=crop"
+                     },
+                     {
+                         "id":  141,
+                         "name":  "ATTREZZO JUMP STRETCH - 33 KG",
+                         "rating":  4,
+                         "originalPrice":  null,
+                         "price":  76,
+                         "image":  "https://images.unsplash.com/photo-1565188739?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "weights"
+                     },
+                     {
+                         "id":  142,
+                         "name":  "ATTREZZO FLEXIBILITY BAND - 47 LBS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  12,
+                         "image":  "https://images.unsplash.com/photo-1675065824?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "equipment"
+                     },
+                     {
+                         "id":  143,
+                         "name":  "ATTREZZO YOGA MAT - 14 PCS",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  296,
+                         "image":  "https://images.unsplash.com/photo-1583912779?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "benches"
+                     },
+                     {
+                         "id":  144,
+                         "name":  "ATTREZZO PILATES MAT - 34 KG",
+                         "rating":  3,
+                         "originalPrice":  null,
+                         "price":  351,
+                         "image":  "https://images.unsplash.com/photo-1667615208?w=400\u0026h=400\u0026fit=crop",
+                         "category":  "cardio"
+                     }
+                 ],
+    "brands":  [
+                   {
+                       "id":  "rogue",
+                       "name":  "Rogue Fitness"
+                   },
+                   {
+                       "id":  "eleiko",
+                       "name":  "Eleiko"
+                   },
+                   {
+                       "id":  "concept2",
+                       "name":  "Concept2"
+                   },
+                   {
+                       "id":  "assault",
+                       "name":  "Assault Fitness"
+                   }
+               ]
+}
