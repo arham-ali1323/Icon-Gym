@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Gym - Frontend-Backend Connection Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #FF6B35, #F7931E);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .server-status {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .status-card {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .status-online {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .status-offline {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .api-test {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .api-endpoint {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #FF6B35;
+        }
+        .response {
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .loading {
+            color: #6c757d;
+        }
+        button {
+            background: #FF6B35;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #F7931E;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏋️ Icon Gym - Frontend-Backend Connection Test</h1>
+        <p>Testing the connection between Next.js frontend and Laravel backend</p>
+    </div>
+
+    <div class="server-status">
+        <div class="status-card">
+            <h3>🔧 Backend Server (Laravel)</h3>
+            <p>Port: 8000</p>
+            <p id="backend-status" class="loading">Checking...</p>
+        </div>
+        <div class="status-card">
+            <h3>🎨 Frontend Server (Next.js)</h3>
+            <p>Port: 3000</p>
+            <p id="frontend-status" class="status-online">✅ Running (You're viewing this page!)</p>
+        </div>
+    </div>
+
+    <div class="api-test">
+        <h2>🔌 API Endpoint Tests</h2>
+        
+        <div class="api-endpoint">
+            <h3>Health Check</h3>
+            <p><code>GET /api/health</code></p>
+            <button onclick="testHealthCheck()">Test Health Check</button>
+            <div id="health-response" class="response"></div>
+        </div>
+
+        <div class="api-endpoint">
+            <h3>Get Trainers</h3>
+            <p><code>GET /api/trainers</code></p>
+            <button onclick="testTrainers()">Get Trainers</button>
+            <div id="trainers-response" class="response"></div>
+        </div>
+
+        <div class="api-endpoint">
+            <h3>Get Classes</h3>
+            <p><code>GET /api/classes</code></p>
+            <button onclick="testClasses()">Get Classes</button>
+            <div id="classes-response" class="response"></div>
+        </div>
+
+        <div class="api-endpoint">
+            <h3>Get Membership Plans</h3>
+            <p><code>GET /api/membership-plans</code></p>
+            <button onclick="testMembershipPlans()">Get Membership Plans</button>
+            <div id="membership-response" class="response"></div>
+        </div>
+
+        <div class="api-endpoint">
+            <h3>User Registration</h3>
+            <p><code>POST /api/register</code></p>
+            <button onclick="testRegistration()">Test Registration</button>
+            <div id="registration-response" class="response"></div>
+        </div>
+    </div>
+
+    <div class="api-test">
+        <h2>🎯 Integration Features</h2>
+        <div class="success">
+            ✅ <strong>API Client Created</strong>: Complete HTTP client with JWT authentication<br>
+            ✅ <strong>Auth Provider</strong>: React Context for authentication state management<br>
+            ✅ <strong>Custom Hooks</strong>: Ready-to-use hooks for all API operations<br>
+            ✅ <strong>Environment Configuration</strong>: Proper API URL configuration<br>
+            ✅ <strong>Error Handling</strong>: Comprehensive error handling and user feedback
+        </div>
+        
+        <h3>Available Features:</h3>
+        <ul>
+            <li>🔐 User Authentication (Login, Register, Logout)</li>
+            <li>👥 Trainer Management</li>
+            <li>📅 Class Scheduling & Booking</li>
+            <li>💳 Membership Plans & Subscriptions</li>
+            <li>📊 Dashboard Integration</li>
+            <li>🎨 Modern UI Components</li>
+        </ul>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:8000/api';
+
+        // Check backend server status
+        async function checkBackendStatus() {
+            try {
+                const response = await fetch(API_BASE_URL + '/health');
+                if (response.ok) {
+                    document.getElementById('backend-status').innerHTML = '✅ Online & Running';
+                    document.getElementById('backend-status').className = 'status-online';
+                } else {
+                    throw new Error('Server responded with error');
+                }
+            } catch (error) {
+                document.getElementById('backend-status').innerHTML = '❌ Offline or Error';
+                document.getElementById('backend-status').className = 'status-offline';
+            }
+        }
+
+        // API Test Functions
+        async function testHealthCheck() {
+            const responseDiv = document.getElementById('health-response');
+            responseDiv.innerHTML = 'Loading...';
+            
+            try {
+                const response = await fetch(API_BASE_URL + '/health');
+                const data = await response.json();
+                responseDiv.innerHTML = JSON.stringify(data, null, 2);
+                responseDiv.style.color = '#28a745';
+            } catch (error) {
+                responseDiv.innerHTML = 'Error: ' + error.message;
+                responseDiv.style.color = '#dc3545';
+            }
+        }
+
+        async function testTrainers() {
+            const responseDiv = document.getElementById('trainers-response');
+            responseDiv.innerHTML = 'Loading...';
+            
+            try {
+                const response = await fetch(API_BASE_URL + '/trainers');
+                const data = await response.json();
+                const summary = {
+                    success: data.success,
+                    count: data.data ? data.data.length : 0,
+                    sample: data.data ? data.data[0] : null
+                };
+                responseDiv.innerHTML = JSON.stringify(summary, null, 2);
+                responseDiv.style.color = '#28a745';
+            } catch (error) {
+                responseDiv.innerHTML = 'Error: ' + error.message;
+                responseDiv.style.color = '#dc3545';
+            }
+        }
+
+        async function testClasses() {
+            const responseDiv = document.getElementById('classes-response');
+            responseDiv.innerHTML = 'Loading...';
+            
+            try {
+                const response = await fetch(API_BASE_URL + '/classes');
+                const data = await response.json();
+                const summary = {
+                    success: data.success,
+                    count: data.data ? data.data.length : 0,
+                    sample: data.data ? data.data[0] : null
+                };
+                responseDiv.innerHTML = JSON.stringify(summary, null, 2);
+                responseDiv.style.color = '#28a745';
+            } catch (error) {
+                responseDiv.innerHTML = 'Error: ' + error.message;
+                responseDiv.style.color = '#dc3545';
+            }
+        }
+
+        async function testMembershipPlans() {
+            const responseDiv = document.getElementById('membership-response');
+            responseDiv.innerHTML = 'Loading...';
+            
+            try {
+                const response = await fetch(API_BASE_URL + '/membership-plans');
+                const data = await response.json();
+                const summary = {
+                    success: data.success,
+                    count: data.data ? data.data.length : 0,
+                    plans: data.data ? data.data.map(p => ({name: p.name, price: p.price})) : null
+                };
+                responseDiv.innerHTML = JSON.stringify(summary, null, 2);
+                responseDiv.style.color = '#28a745';
+            } catch (error) {
+                responseDiv.innerHTML = 'Error: ' + error.message;
+                responseDiv.style.color = '#dc3545';
+            }
+        }
+
+        async function testRegistration() {
+            const responseDiv = document.getElementById('registration-response');
+            responseDiv.innerHTML = 'Loading...';
+            
+            try {
+                const response = await fetch(API_BASE_URL + '/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        name: 'Test User',
+                        email: 'test' + Date.now() + '@example.com',
+                        password: 'Password123!@#',
+                        phone: '+1234567890'
+                    })
+                });
+                const data = await response.json();
+                responseDiv.innerHTML = JSON.stringify(data, null, 2);
+                responseDiv.style.color = response.ok ? '#28a745' : '#dc3545';
+            } catch (error) {
+                responseDiv.innerHTML = 'Error: ' + error.message;
+                responseDiv.style.color = '#dc3545';
+            }
+        }
+
+        // Initialize
+        checkBackendStatus();
+    </script>
+</body>
+</html>

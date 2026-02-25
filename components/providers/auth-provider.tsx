@@ -1,3 +1,5 @@
+"use client";
+
 import { apiClient } from '@/lib/api';
 import { useAuth } from '@/lib/hooks';
 import { useState, useEffect, createContext, useContext } from 'react';
